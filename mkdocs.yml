@@ -1,0 +1,11 @@
+site_name: SMRT Link Install Guide
+site_url: https://install.smrtlink.how
+theme:
+  name: material
+
+## Coloring
+extra_css:
+  - assets/stylesheets/custom.css
+
+## Footer
+copyright: © 2025 PacBio. All rights reserved. Research use only. Not for use in diagnostic procedures. <a href="https://www.pacb.com/legal-and-trademarks/privacy-policy/" target="_blank">Privacy policy</a>  |  <a href="https://www.pacb.com/legal-and-trademarks/" target="_blank">Legal + trademarks</a>

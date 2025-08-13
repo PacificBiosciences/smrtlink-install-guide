@@ -1,0 +1,13 @@
+/* Change the top banner (header) color using a HEX color code */
+:root {
+    --custom-header-color: #e31b92; /* Magenta (change this to any hex color) */
+}
+
+.md-header {
+    background-color: var(--custom-header-color) !important;
+}
+
+/* Adjust text color for better contrast if needed */
+.md-header__inner {
+    color: white !important;
+}
