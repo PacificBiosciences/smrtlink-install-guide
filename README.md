@@ -1,6 +1,6 @@
 # Documentation rendered here:
 
-// Under construction //
+https://install.smrtlink.how
 
 ## Disclaimer
 ___

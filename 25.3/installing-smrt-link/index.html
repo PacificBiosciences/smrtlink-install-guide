@@ -1,0 +1,751 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://install.smrtlink.how/25.3/installing-smrt-link/">
+      
+      
+        <link rel="prev" href="../system-requirements/">
+      
+      
+        <link rel="next" href="../upgrading-smrt-link/">
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Installing SMRT Link - SMRT Link Install Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#installation-guide-for-smrt-link-v253" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../.."> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL(".."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="SMRT Link Install Guide" class="md-header__button md-logo" aria-label="SMRT Link Install Guide" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SMRT Link Install Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Installing SMRT Link
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SMRT Link Install Guide" class="md-nav__button md-logo" aria-label="SMRT Link Install Guide" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    SMRT Link Install Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system-requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    System Requirements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Installing SMRT Link
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installing SMRT Link
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post-installation steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smrt-tools-installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      SMRT Tools installation steps
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../upgrading-smrt-link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Upgrading SMRT Link
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../instrument-connection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Instrument Connection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Topics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post-installation steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smrt-tools-installation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      SMRT Tools installation steps
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="installation-guide-for-smrt-link-v253">Installation Guide for SMRT Link v25.3</h1>
+<p>This guide provides comprehensive instructions for installing SMRT Link v25.3. </p>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before getting started please ensure all system requirements are met. Please reference <a href="../system-requirements/">System Requirements</a></p>
+</div>
+<hr />
+<h2 id="installation-steps">Installation steps</h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Download and Unzip the Installer</strong>: <code>curl -O https://downloads.pacbcloud.com/public/software/installers/smrtlink-release_25.2.0.266456.zip</code> <br><br> <code>unzip smrtlink-release_25.2.0.266456.zip</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Log onto Install Host</strong>: Access the server as <code>$SMRT_USER</code>.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Run the Installer</strong>: Execute the following commands based on the installation type:<br><br><strong>Full SMRT Link</strong>:<br><code>./smrtlink_&lt;version_number&gt;.run --rootdir $SMRT_ROOT</code><br><br><strong>SMRT Link Lite</strong>:<br><code>./smrtlink_&lt;version_number&gt;.run --lite true --jmstype NONE --rootdir $SMRT_ROOT --nworkers 4</code><br><br> For most installations the default setup options shown below can be accepted.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Part 1 of 10: SMRT Link User</strong>: It is recommended to run this script as a designated SMRT Link user (e.g. smrtanalysis) who will own all smrtpipe jobs and daemon processes. Current user is xxx. Use the xxx as the SMRT Link user? [Y/n]</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Part 2 of 10: SMRT Link Server DNS</strong>: The DNS name of the SMRT Link host server is used for creating SMRT Link URLs (e.g. http://smrtlink.example.com:9090), ensuring an SSL certificate will validate.  If the Domain Name System (DNS) does not resolve to the expected address, then an IP address must be used. Detecting DNS names... Pick an option...</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Part 3 of 10: SMRT Link Setup</strong>: The SMRT Link UI and SMRT Link Services require one port each for proper operation.  The SMRT Link UI port serves to redirect from an unencrypted http connection to the login page using secure https. The SMRT Link Services port is needed for internal access to the SMRT Link webservices API.  Select port numbers which do not conflict with any other process. Enter the SMRT Link UI (http) port [9090]: <em>Recommend default value 9090</em> <br> Enter the SMRT Link Services port [9091]: <em>Recommend default value 9091</em> <br> Memory settings must be preset for SMRT Link.  By default, the initial (-Xms) and maximum (-Xmx) Java heap sizes are set to the same values.  The default for SMRT Link services is 25% of the total memory with a maximum of 32768 MB.  Using the default value is recommended. <br> Enter the SMRT Link Services initial memory (in MB) <br> Enter the SMRT Link Services maximum memory (in MB) <br> Enter the SMRT Link ICS Services initial memory (in MB) <br> Enter the SMRT Link ICS Services maximum memory (in MB)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Part 4 of 10: Database Setup</strong>: The SMRT Link Services use a database which need access to a network port and a directory to store database data files. The port will only be used to access the database from the SMRT Link install host (localhost).  Select a port number which does not conflict with any other process. The database data directory should be located on a high performance file system.  Typically, a local (not shared) disk partition. Enter the SMRT Link Database port [9095]: <em>Recommend default value 9095</em> <br> Enter the full path to the 'db_datadir' directory</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Part 5 of 10: Cromwell Server Setup</strong>: The Cromwell Workflow Engine Server manages the workflow for SMRT Analysis jobs.  It requires a single port for proper operation. Select a port number which does not conflict with any other process. Enter the Cromwell Server port [9096]: <em>Recommend default value 9096</em></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Part 6 of 10: Site-specific Directories Setup</strong>: SMRT Link makes use of the following site-specific directories: <code>jobs_root</code> and <code>tmp_dir</code>. <code>jobs_root</code> - This directory stores job output from the SMRT Analysis module of SMRT Link.  This directory may require a large amount of disk space (&gt; 15TB, for example). Enter the full path to the 'jobs_root' directory <br> <code>tmp_dir</code> - This directory is used for fast I/O operations, and should be located on a high performance file system available on the SMRT Link host and on each compute cluster node individually. Typically, it should be a local (not shared) disk partition. The recommended size size is 1TB (500GB minimum).  If the directory location does not exist, a directory will be automatically created. Enter the full path to the 'tmp_dir' directory</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Part 7 of 10: Remote Service Setup</strong>: The 'SMRT Link Event Service' provides the ability to send PacBio the following SMRT Link information: <br> 1) installation troubleshooting logs <br> 2) analysis failure logs <br> 3) usage information (sample names and sequence data excluded) <br> Note: 'SMRT Link Event Service' will be configured in the SMRT Link UI, upon first access after install or upgrade. <br> The 'SMRT Link Update Service' will provide automatic notification and prompt for installation of SMRT Link update bundles.   Currently, updates of the SMRT Link UI Bundle and the SMRT Link Chemistry Bundle are supported.  The SMRT Link Chemistry Bundle will enable the use of new PacBio consumables. Enable the 'SMRT Link Update Service'? [Y/n]</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Part 8 of 10: SMRT Link Analysis Job Email Notification</strong>: SMRT Link can be configured to send email notifications of completed analysis jobs to the user who launched the analysis (for both successful and failed jobs). SMRT Link only supports connections to SMTP Relays without encryption. Servers using basic authentication, SSL/TLS, or STARTTLS are not supported. Email notification is disabled if the outgoing mail server host is empty.  Configure the SMTP mail host and port settings below. Enter the SMRT Link notification outgoing mail server host.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Part 9 of 10: SMRT Link Compute Configuration</strong>: SMRT Link allows for one or more compute configurations to be defined for processing analysis jobs.  Each compute configuration can specify unique workflow and Job Management System settings, independent from other compute configurations. When configuring a SMRT Analysis job, a drop-down menu under the "Advanced Parameter Settings" allows selection of multiple compute configurations. The selected configuration will be used for all JMS cluster submissions for that analysis job. Configuring 'SMRT Analysis Compute Configuration' (computecfg_00). NAME - Specifies a unique name for the compute configuration. Enter the compute config 'NAME' [SMRT Analysis Compute Configuration] <br> NPROC - Specifies the maximum number of slots each task may request upon job submissions to a JMS cluster.  One processor core per slot is assumed. Enter the number of processors per task 'NPROC' [8] <br> MAXCHUNKS - Specify the maximum number of parallel chunks when breaking up large dataset files. Enter the number of parallel chunks per task 'MAXCHUNKS' [24] <br> Specify the global 'concurrent_job_limit' for Cromwell.  This is the maximum number of simultaneous jobs that Cromwell can submit to the compute cluster. Select the Cromwell concurrent_job_limit [500] <br> A Job Management System may be used to dispatch jobs to a distributed compute environment.  If no Job Management System is specified, the system will run in Non-Distributed Mode and all compute jobs will be run locally on the install host.  Available Job Management Systems will be detected from the PATH environment variable, but may also be selected manually. <em>Recommend Slurm</em> <br> Installer will then confirm settings for SLURM_BINDIR, SLURM_PARTITION, SLURM_STARTARGS, SLURM_USERACCTING, SLURM_MEMREQUEST, SLURM_SLURMCONF and allow the option to modify or add additional compute configurations</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Part 10 of 10: SMRT Link Analysis Configuration</strong>: NWORKERS - Specifies the maximum number of simultaneous SMRT Analysis workflows that can be run by the SMRT Link server.  This should be set to no more than the number of processors available on the SMRT Link install machine.  The default is the min of 32 and number of processors on the system. Enter the max number of workers 'NWORKERS' [32]</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Start Services</strong>: Use the command:<br><code>$SMRT_ROOT/admin/bin/services-start</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Run Site Acceptance Test (Optional)</strong>:<br><code>$SMRT_ROOT/admin/bin/run-sat-services</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="post-installation-steps">Post-installation steps</h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Enable Keycloak Admin interface (Optional)</strong>. We recommend leaving the console disabled when you are not actively managing server access:<br><code>$SMRT_ROOT/admin/bin/restart-gui --enable-keycloak-console</code><br><code>$SMRT_ROOT/admin/bin/restart-gui --disable-keycloak-console</code> <br> See <a href="../advanced-topics/">Advanced Topics</a>.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Configure LDAP (Optional)</strong>:<br>Set up LDAP integration and add users. See <a href="../advanced-topics/">Advanced Topics</a>.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Install SSL Certificate (Optional)</strong>:<br>Upon the first startup of SMRT Link, NGINX automagically generates a key and self signed certificate. To create a new certificate see <a href="../advanced-topics/">Advanced Topics</a>.</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Change Default Passwords (Optional)</strong>:<br>Update admin and pbicsuser passwords. See <a href="../advanced-topics/">Advanced Topics</a>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="smrt-tools-installation-steps">SMRT Tools installation steps</h2>
+<p>SMRT Tools are the command-line tools included with SMRT Link. These are developer tools for use by bioinformaticians working with secondary analysis results. </p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Install SMRT Tools</strong>:<br><code>./smrtlink_&lt;version_number&gt;.run --rootdir $SMRT_ROOT --smrttools-only</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Access Tools</strong>:<br><code>$SMRT_ROOT/smrtlink/smrtcmds/bin</code></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../system-requirements/" class="md-footer__link md-footer__link--prev" aria-label="Previous: System Requirements">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                System Requirements
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../upgrading-smrt-link/" class="md-footer__link md-footer__link--next" aria-label="Next: Upgrading SMRT Link">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Upgrading SMRT Link
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2025 PacBio. All rights reserved. Research use only. Not for use in diagnostic procedures. <a href="https://www.pacb.com/legal-and-trademarks/privacy-policy/" target="_blank">Privacy policy</a>  |  <a href="https://www.pacb.com/legal-and-trademarks/" target="_blank">Legal + trademarks</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["version-dropdown", "navigation.footer"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

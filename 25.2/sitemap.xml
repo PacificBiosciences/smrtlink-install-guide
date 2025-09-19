@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://install.smrtlink.how/25.2/</loc>
+         <lastmod>2025-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://install.smrtlink.how/25.2/advanced-topics/</loc>
+         <lastmod>2025-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://install.smrtlink.how/25.2/configuration/</loc>
+         <lastmod>2025-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://install.smrtlink.how/25.2/installing-smrt-link/</loc>
+         <lastmod>2025-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://install.smrtlink.how/25.2/instrument-connection/</loc>
+         <lastmod>2025-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://install.smrtlink.how/25.2/quick-start-guide/</loc>
+         <lastmod>2025-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://install.smrtlink.how/25.2/system-requirements/</loc>
+         <lastmod>2025-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://install.smrtlink.how/25.2/upgrading-smrt-link/</loc>
+         <lastmod>2025-07-17</lastmod>
+    </url>
+</urlset>

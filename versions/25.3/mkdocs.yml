@@ -1,0 +1,50 @@
+site_name: SMRT Link Install Guide
+site_url: https://install.smrtlink.how/
+nav:
+  - Home: index.md
+  - Quick Start Guide: quick-start-guide.md
+  - System Requirements: system-requirements.md
+  - Installing SMRT Link: installing-smrt-link.md
+  - Upgrading SMRT Link: upgrading-smrt-link.md
+  - Configuration: configuration.md
+  - Instrument Connection: instrument-connection.md
+  - Advanced Topics: advanced-topics.md
+
+# Enable macros to use variables
+plugins:
+  - macros
+  - search
+  - mike
+
+# Theme settings
+theme:
+  name: material
+  custom_dir: overrides  # Enables custom template overrides
+  favicon: assets/favicon.png
+  logo: assets/logo.png
+  features:
+    - version-dropdown
+    - navigation.footer
+
+# Markdown extensions to have 'notes' and 'warnings'
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+# Global variables
+extra:
+  smrt_link: 
+      version: 25.3
+  smrt_link_lite:
+      version: 25.3
+  version:
+    provider: mike
+    alias: true
+
+## Coloring
+extra_css:
+  - assets/stylesheets/custom.css
+
+## Footer
+copyright: © 2025 PacBio. All rights reserved. Research use only. Not for use in diagnostic procedures. <a href="https://www.pacb.com/legal-and-trademarks/privacy-policy/" target="_blank">Privacy policy</a>  |  <a href="https://www.pacb.com/legal-and-trademarks/" target="_blank">Legal + trademarks</a>

@@ -1,0 +1,1054 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://install.smrtlink.how/25.2/instrument-connection/">
+      
+      
+        <link rel="prev" href="../configuration/">
+      
+      
+        <link rel="next" href="../advanced-topics/">
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Instrument Connection - SMRT Link Install Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#instrument-connection" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../.."> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL(".."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="SMRT Link Install Guide" class="md-header__button md-logo" aria-label="SMRT Link Install Guide" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SMRT Link Install Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Instrument Connection
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SMRT Link Install Guide" class="md-nav__button md-logo" aria-label="SMRT Link Install Guide" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    SMRT Link Install Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system-requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    System Requirements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-smrt-link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installing SMRT Link
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../upgrading-smrt-link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Upgrading SMRT Link
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Instrument Connection
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Instrument Connection
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#storage-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage considerations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-a-file-transfer-schemelocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting up a file transfer scheme/location
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setting up a file transfer scheme/location">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scheme-specific-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scheme-specific fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scheme-specific fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssh-srs" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH (srs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon S3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-cloud-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google Cloud Storage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microsoft-azure-blob-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microsoft Azure Blob Storage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s3-compatible-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      S3-compatible storage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-a-new-instrument" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect a new instrument
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modifying-an-existing-instrument-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modifying an existing instrument connection
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Topics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#storage-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage considerations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-a-file-transfer-schemelocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting up a file transfer scheme/location
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setting up a file transfer scheme/location">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scheme-specific-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scheme-specific fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scheme-specific fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssh-srs" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH (srs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon S3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-cloud-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google Cloud Storage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microsoft-azure-blob-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microsoft Azure Blob Storage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s3-compatible-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      S3-compatible storage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-a-new-instrument" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect a new instrument
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modifying-an-existing-instrument-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modifying an existing instrument connection
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="instrument-connection">Instrument connection</h1>
+<p>This section provides guidance on connecting an instrument (Revio or Vega system) to SMRT Link v25.2 to enable users to start sequencing runs and ensure seamless data transfer following sequence completion and importation into SMRT Link to view run metrics. </p>
+<p>The following procedure is available only for SMRT Link users whose role is <code>Admin</code>.</p>
+<h2 id="storage-considerations">Storage considerations</h2>
+<p>If not done already, identify a location in the cloud or on your shared file system (NFS) where the instrument can transfer data. This location must be readable from the SMRT Link server. </p>
+<table>
+<thead>
+<tr>
+<th>Instrument</th>
+<th>Storage Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revio system</td>
+<td>Up to 78 TB/year <br> Assuming 120 Gbp HiFi Yield (~60 GB file size) per SMRT Cell and 1,300 SMRT Cells per year.</td>
+</tr>
+<tr>
+<td>Vega system</td>
+<td>Up to 6 TB/year <br> Assuming ~60 Gbp HiFi yield (~30 GB file size) per SMRT Cell and 200 SMRT Cells per year.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>This location can be located on the same share as <a href="../system-requirements/#associated-install-directories"><code>jobs_root</code></a>, but should be considered separately with regard to storage needs.</li>
+<li>Job storage requirements depend on utilization and analyses performed.</li>
+</ul>
+<h2 id="setting-up-a-file-transfer-schemelocation">Setting up a file transfer scheme/location</h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Identify the location on you SMRT Link or file share (NFS) where data should transfer</td>
+</tr>
+<tr>
+<td>2</td>
+<td>In SMRT Link web interface, navigate to <code>Settings &gt; Instrument Settings</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Click <code>+ New File Transfer Location</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Choose the desired scheme: <ul><li> ssh (srs) </li><li> Amazon S3 </li><li> Google Cloud Storage </li><li> Microsoft Azure Blob Storage </li><li> S3-compatible storage </li></ul></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Enter the required information for the selected transfer scheme. <ul><li> <strong>Name</strong>: User-specified text string that displays in the Data directory dialog to identify the transfer scheme. </li><li> <strong>Description</strong>: User-specified text string that describes the transfer scheme. </li><li> <strong>Scheme-specific fields</strong> (see below). </li></ul></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Click <code>Save</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Once the transfer scheme is associated with a connected instrument (see <a href="#connect-a-new-instrument">Connect a New Instrument</a>), return to this menu and click <code>Test Settings</code> to ensure that the scheme works.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The rsync daemon file transfer scheme will be disabled through a future software update in favor of more secure alternatives. Once disabled, file transfers will fail. PacBio strongly recommends transitioning to a supported transfer option.</p>
+</div>
+<h3 id="scheme-specific-fields">Scheme-specific fields</h3>
+<h4 id="ssh-srs">SSH (srs)</h4>
+<details class="abstract">
+<summary>Expand scheme details</summary>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are using the SSH (srs) scheme, contact your Field Service Engineer (FSE) or PacBio tech support to have an SSH key created on your instrument. You will recieve the public SSH key which should be placed in <code>~/.ssh/authorized_keys</code> file on the transfer server for whatever user is recieving the transfer (typically <code>$SMRT_USER</code>; Username setting below)</p>
+</div>
+<p>Please ensure that the <code>~/.ssh</code> folder and <code>~/.ssh/authorized_keys</code> file have the correct permissions set to allow the instrument to transfer data. </p>
+<div class="highlight"><pre><span></span><code>chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+</code></pre></div>
+<ul>
+<li><strong>Host</strong>: DNS name or IP address of your storage server. This may be the SMRT Link server or another storage location on the network. The name of this system can be obtained from your system administrator. Example: mp-srs.</li>
+<li><strong>Destination path</strong>: File system location that contains all data transferred via srs.</li>
+<li>(Optional) <strong>Relative path</strong>: Path used to place run data in a specific sub- directory underneath the location specified in Destination path, on a per-instrument basis. A common value for this field is the instrument serial number or name. This field can contain only alphanumerics, “-“, “_”, and “/”. This field allows separation of run data from different instruments, which allows for easier location of particular run data when browsing the file system.</li>
+<li><strong>Username</strong>: Name of the service account used for transferring datasets to the remote file server.</li>
+<li><strong>SSH Key</strong>: Full path to the SSH private key on the instrument. Please contact your FSE or PacBio tech support to recieve this path. </li>
+</ul>
+</details>
+<h4 id="amazon-s3">Amazon S3</h4>
+<details class="abstract">
+<summary>Expand scheme details</summary>
+<ul>
+<li><strong>Bucket</strong>: Bucket name without the “s3://” prefix. Example: mp-s3</li>
+<li><strong>Region</strong>: Region where the bucket is hosted. To find your region run:
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>--silent<span class="w"> </span>--head<span class="w"> </span>https://s3.amazonaws.com/&lt;your-bucket&gt;<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;x-amz-bucket-region&#39;</span>
+</code></pre></div></li>
+<li><strong>Path</strong> (Optional): Path used to place run data in a specific sub- directory within the specified bucket. This field can contain only alphanumerics, “-“, “_”, and “/”. This field allows separation of run data from different instruments, which allows for easier location of particular run data when browsing the file system.</li>
+<li><strong>Access key ID</strong></li>
+<li><strong>Secret access key</strong></li>
+</ul>
+<p><strong>S3 Bucket configuration</strong> </p>
+<ol>
+<li>Create a private S3 bucket, e.g. <code>mylabname-pacbio-instrument-data</code> in your preferred geographical region.</li>
+<li>Create an IAM policy pacbio-instrument-file-transfer granting the necessary permissions
+on the bucket, including the ability to read, write, and delete objects.</li>
+<li>Create an IAM user with the new policy attached.</li>
+<li>Create static access credentials for the new IAM user and save them for step 5.</li>
+<li>Log in to SMRT Link as an admin user, navigate to Instrument Settings, and create a new
+Amazon S3 transfer scheme with the bucket name and region from step 1, and access
+credentials from step 4.
+Example IAM policy, where <code>$BUCKET</code> is replaced by the actual destination bucket name
+(e.g. <code>mylabname-pacbio-instrument-data</code>).
+<div class="highlight"><pre><span></span><code>{
+  &quot;Version&quot;: &quot;2012-10-17&quot;,
+  &quot;Statement&quot;: [
+    {
+      &quot;Sid&quot;: &quot;VisualEditor0&quot;,
+      &quot;Effect&quot;: &quot;Allow&quot;,
+      &quot;Action&quot;: [
+        &quot;s3:PutObject&quot;,
+        &quot;s3:GetObject&quot;,
+        &quot;s3:GetBucketWebsite&quot;,
+        &quot;s3:GetObjectVersionTagging&quot;,
+        &quot;s3:ListBucketVersions&quot;,
+        &quot;s3:GetObjectAttributes&quot;,
+        &quot;s3:GetObjectTagging&quot;,
+        &quot;s3:ListBucket&quot;,
+        &quot;s3:GetBucketVersioning&quot;,
+        &quot;s3:GetObjectVersionAttributes&quot;,
+        &quot;s3:GetObjectVersion&quot;,
+        &quot;s3:DeleteObject&quot;
+      ],
+      &quot;Resource&quot;: [
+        &quot;arn:aws:s3:::$BUCKET&quot;,
+        &quot;arn:aws:s3:::$BUCKET/*&quot;
+      ]
+    }
+  ]
+}
+</code></pre></div></li>
+</ol>
+</details>
+<h4 id="google-cloud-storage">Google Cloud Storage</h4>
+<details class="abstract">
+<summary>Expand scheme details</summary>
+<ul>
+<li><strong>Bucket</strong>: Bucket name with no “gs://” prefix</li>
+<li><strong>Path</strong>: /path/to/subfolder in bucket to which to post</li>
+<li><strong>Access key</strong>: Create HMAC key in GCP console (see
+<a href="https://cloud.google.com/storage/docs/authentication/managing-hmackeys#console">https://cloud.google.com/storage/docs/authentication/managing-hmackeys#console</a>)</li>
+<li><strong>Secret key</strong>: Create HMAC key in GCP console (see
+<a href="https://cloud.google.com/storage/docs/authentication/managing-hmackeys#console">https://cloud.google.com/storage/docs/authentication/managing-hmackeys#console</a>)</li>
+</ul>
+</details>
+<h4 id="microsoft-azure-blob-storage">Microsoft Azure Blob Storage</h4>
+<details class="abstract">
+<summary>Expand scheme details</summary>
+<ul>
+<li><strong>Account name</strong>: Account name, for example <account-name> from https://<accountname>.blob.core.windows.net</li>
+<li><strong>Container</strong>: The container name from https://<accountname>.blob.core.windows.net/<container></li>
+<li><strong>Path</strong>: /path/to/subfolder in container</li>
+<li><strong>Account key</strong>: Key associated with account</li>
+</ul>
+</details>
+<h4 id="s3-compatible-storage">S3-compatible storage</h4>
+<details class="abstract">
+<summary>Expand scheme details</summary>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Follow <a href="#amazon-s3">S3 Bucket configuration</a> requirements when setting up S3 compatible storage.</p>
+</div>
+<ul>
+<li><strong>Endpoint</strong>: URL for object storage endpoint, for example https://storage.googleapi.com</li>
+<li><strong>Bucket</strong>: Bucket name with no prefix, for example /bucketname .</li>
+<li><strong>Region</strong> (Optional): Region name for cloud-based services.</li>
+<li><strong>Path</strong> (Optional): Path used to place run data in a specific sub- directory underneath the location specified by your Bucket, on a per-instrument basis. A common value for this field is the instrument serial number or name. This field can contain only alphanumerics, “-“, “_”, and “/”. This field allows separation of run data from different instruments, which allows for easier location of particular run data when browsing the file system.</li>
+<li><strong>Access key</strong>: Access key for cloud-based services.</li>
+<li><strong>Secret key</strong>: Secret key for cloud-based services</li>
+</ul>
+</details>
+<h2 id="connect-a-new-instrument">Connect a new instrument</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following procedure is available only for SMRT Link users whose role is <code>Admin</code>.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>In SMRT Link web interface, navigate to <code>Settings &gt; Instrument Settings</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Click <code>+ Connect New Instrument.</code></td>
+</tr>
+<tr>
+<td></td>
+<td><img alt="" src="../img/connect-new-instrument_1.png" /></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Enter the IP address of the new Revio or Vega system. This is available on the instrument touchscreen; please write it down for later reference.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Enter the Instrument Secret Key. This is available on the instrument touchscreen, please write it down for later reference. Then, click <code>Continue</code>.</td>
+</tr>
+<tr>
+<td></td>
+<td><img alt="" src="../img/connect-new-instrument_2.png" /></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Enter the name of the new instrument, then click <code>Continue</code>. <br> Note: The name must contain only alphanumeric characters, spaces, hyphens (-), underscores (_), or apostrophes ('). In addition, the instrument name must be unique for a given SMRT Link installation. Recommend using the instrument serial number (Revio: 84###; Vega: 21###)</td>
+</tr>
+<tr>
+<td></td>
+<td><img alt="" src="../img/connect-new-instrument_3.png" /></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Select a File Transfer Location. See <a href="#setting-up-a-file-transfer-schemelocation">Setting up a File Transfer Scheme/Location</a>.</td>
+</tr>
+<tr>
+<td></td>
+<td><img alt="" src="../img/connect-new-instrument_4.png" /></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Click <code>Continue</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Verify the information, click <code>Confirm</code>, and then <code>Close</code>. The new instrument displays in the <code>Instrument Management</code> table as well as in the <code>Instruments</code> module</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modifying-an-existing-instrument-connection">Modifying an existing instrument connection</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following procedure is available only for SMRT Link users whose role is <code>Admin</code>.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>In SMRT Link web interface, navigate to <code>Settings &gt; Instrument Settings</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>In the Instrument Management table, click an existing instrument. The Edit Instrument dialog displays</td>
+</tr>
+<tr>
+<td>3</td>
+<td>(Optional) Edit the instrument name. Note: The name must contain only alphanumeric characters, spaces, hyphens (-), underscores (_), or apostrophes (').</td>
+</tr>
+<tr>
+<td>4</td>
+<td>(Optional) Select a different File Transfer Location. Note: If a run is currently in progress, the file transfer location will be updated after the run is completed.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Click Apply</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../configuration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Configuration">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Configuration
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../advanced-topics/" class="md-footer__link md-footer__link--next" aria-label="Next: Advanced Topics">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Advanced Topics
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2025 PacBio. All rights reserved. Research use only. Not for use in diagnostic procedures. <a href="https://www.pacb.com/legal-and-trademarks/privacy-policy/" target="_blank">Privacy policy</a>  |  <a href="https://www.pacb.com/legal-and-trademarks/" target="_blank">Legal + trademarks</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["version-dropdown", "navigation.footer", "content.code.copy"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
