@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://install.smrtlink.how/25.3/configuration/">
+        <link rel="canonical" href="https://install.smrtlink.how/25.3/upgrading-smrt-link/">
       
       
-        <link rel="prev" href="../upgrading-smrt-link/">
+        <link rel="prev" href="../installing-smrt-link/">
       
       
-        <link rel="next" href="../instrument-connection/">
+        <link rel="next" href="../configuration/">
       
       
       <link rel="icon" href="../assets/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Configuration - SMRT Link Install Guide</title>
+        <title>Upgrading SMRT Link - SMRT Link Install Guide</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuring-smrt-link" class="md-skip">
+        <a href="#upgrading-smrt-link-to-v253" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuration
+              Upgrading SMRT Link
             
           </span>
         </div>
@@ -290,27 +290,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../upgrading-smrt-link/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Upgrading SMRT Link
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -327,7 +306,7 @@
           
   
   <span class="md-ellipsis">
-    Configuration
+    Upgrading SMRT Link
     
   </span>
   
@@ -339,7 +318,7 @@
         
   
   <span class="md-ellipsis">
-    Configuration
+    Upgrading SMRT Link
     
   </span>
   
@@ -362,33 +341,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#reconfiguring-smrt-link" class="md-nav__link">
+  <a href="#supported-upgrade-paths" class="md-nav__link">
     <span class="md-ellipsis">
-      Reconfiguring SMRT Link
+      Supported upgrade paths
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Reconfiguring SMRT Link">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#changing-a-specific-setting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Changing a specific setting
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-topics" class="md-nav__link">
+  <a href="#pre-upgrade-considerations" class="md-nav__link">
     <span class="md-ellipsis">
-      Advanced Topics
+      Pre-upgrade considerations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrade-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-upgrade-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post-upgrade steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smrt-tools-upgrade-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      SMRT Tools upgrade steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
     </span>
   </a>
   
@@ -398,6 +398,27 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -471,33 +492,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#reconfiguring-smrt-link" class="md-nav__link">
+  <a href="#supported-upgrade-paths" class="md-nav__link">
     <span class="md-ellipsis">
-      Reconfiguring SMRT Link
+      Supported upgrade paths
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Reconfiguring SMRT Link">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#changing-a-specific-setting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Changing a specific setting
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-topics" class="md-nav__link">
+  <a href="#pre-upgrade-considerations" class="md-nav__link">
     <span class="md-ellipsis">
-      Advanced Topics
+      Pre-upgrade considerations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrade-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-upgrade-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post-upgrade steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smrt-tools-upgrade-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      SMRT Tools upgrade steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
     </span>
   </a>
   
@@ -519,132 +561,121 @@
 
 
 
-<h1 id="configuring-smrt-link">Configuring SMRT Link</h1>
-<p>SMRT Link configuration is done interactively during the installation process (see <a href="../installing-smrt-link/">Installing SMRT Link</a>). For example, during installation you will setup:</p>
-<ul>
-<li>The SMRT Link server domain name (DNS)</li>
-<li>The location of <code>db_datadir</code>, <code>jobs_root</code>, and <code>tmp_dir</code> (see <a href="../system-requirements/#associated-install-directories">System Requirements</a>)</li>
-<li>SMRT Analysis job email notifications</li>
-<li>Compute configurations<ul>
-<li>You can setup multiple compute configurations, for example:<ol>
-<li>SLURM distributed analysis (general partition)</li>
-<li>SLURM distributed analysis (high-mem or CPU partition)</li>
-<li>Local analysis (non-distributed analysis)</li>
+<h1 id="upgrading-smrt-link-to-v253">Upgrading SMRT Link to v25.3</h1>
+<p>This section provides detailed instructions for upgrading SMRT Link to version 25.3. Following these steps ensures a smooth transition and maintains the integrity of your data and configurations.</p>
+<hr />
+<h2 id="supported-upgrade-paths">Supported upgrade paths</h2>
+<p>Upgrades to v25.3 from versions since 13.x are supported. </p>
+<hr />
+<h2 id="pre-upgrade-considerations">Pre-upgrade considerations</h2>
+<p>Before initiating the upgrade, ensure the following:</p>
+<ol>
+<li>
+<p><strong>Backup</strong>: Create a complete backup of your current SMRT Link installation, including configuration files and databases.</p>
+<p>A utility script to generate an appropriate cron server command was added at <code>$SMRT_ROOT/admin/bin/generate-cron-backup</code>. This helper script makes it easy to take a pg_dump of the smrtlinkdb and keycloak databases. Ideally, these should both be backed up.</p>
+</li>
+<li>
+<p><strong>Active Jobs</strong>: Verify that no active SMRT Link analysis jobs are running. It's crucial to complete or terminate all jobs before proceeding.</p>
+</li>
+<li>
+<p><strong>Disk Space</strong>: Ensure sufficient disk space is available for the upgrade process.</p>
+</li>
 </ol>
-</li>
-</ul>
-</li>
-</ul>
-<p>Expand the Configuration Details section below to see an example configuration file generated during a SMRT Link installation. This file can be found at <code>$SMRT_ROOT/userdata/config/smrtlink.config</code> following installation. </p>
-<details class="abstract">
-<summary>Configuration Details</summary>
-<div class="highlight"><pre><span></span><code># smrtlink config
-
-# &#39;install&#39; settings
-install__user=&#39;smrtanalysis&#39;;
-install__group=&#39;smrtanalysis&#39;;
-install__sluuid=&#39;859d2df1-cc8a-4e56-bc5b-0c83df4a5c79&#39;;
-install__umask=&#39;__USE_DEFAULT__&#39;;                # Current val: &#39;0022&#39;
-
-# &#39;system&#39; settings
-system__memtotal=&#39;__USE_DEFAULT__&#39;;              # Current val: &#39;12884901888&#39;
-
-# &#39;smrtlink&#39; settings
-smrtlink__dnsname=&#39;smrtlinkhost.mydomain.com&#39;;
-smrtlink__gui_port=&#39;__USE_DEFAULT__&#39;;            # Current val: &#39;9090&#39;
-smrtlink__services_port=&#39;__USE_DEFAULT__&#39;;       # Current val: &#39;9091&#39;
-smrtlink__services_minmem=&#39;__USE_DEFAULT__&#39;;     # Current val: &#39;3072&#39;
-smrtlink__services_maxmem=&#39;__USE_DEFAULT__&#39;;     # Current val: &#39;3072&#39;
-smrtlink__ics_services_minmem=&#39;__USE_DEFAULT__&#39;;  # Current val: &#39;1216&#39;
-smrtlink__ics_services_maxmem=&#39;__USE_DEFAULT__&#39;;  # Current val: &#39;1216&#39;
-smrtlink__mail_host=&#39;__USE_DEFAULT__&#39;;           # Current val: &#39;&#39;
-smrtlink__mail_port=&#39;__USE_DEFAULT__&#39;;           # Current val: &#39;25&#39;
-smrtlink__mail_user=&#39;__USE_DEFAULT__&#39;;           # Current val: &#39;&#39;
-smrtlink__mail_password=&#39;__USE_DEFAULT__&#39;;       # Current val: &#39;&#39;
-smrtlink__nworkers=&#39;__USE_DEFAULT__&#39;;                 # Current val: &#39;8&#39;
-smrtlink__extended_cell_use_enable=&#39;__USE_DEFAULT__&#39;;  # Current val: &#39;false&#39;
-smrtlink__pacbio_internal=&#39;__USE_DEFAULT__&#39;;     # Current val: &#39;false&#39;
-
-# &#39;remote&#39; settings
-remote__eve_server_select=&#39;__USE_DEFAULT__&#39;;     # Current val: &#39;production&#39;
-remote__eve_url=&#39;__USE_DEFAULT__&#39;;               # Current val: &#39;&#39;
-remote__update_server_select=&#39;__USE_DEFAULT__&#39;;  # Current val: &#39;production&#39;
-remote__update_url=&#39;__USE_DEFAULT__&#39;;            # Current val: &#39;&#39;
-remote__update_enable=&#39;__USE_DEFAULT__&#39;;         # Current val: &#39;true&#39;
-
-# &#39;cromwell&#39; settings
-cromwell__port=&#39;__USE_DEFAULT__&#39;;                # Current val: &#39;9096&#39;
-
-# &#39;database&#39; settings
-database__dbport=&#39;__USE_DEFAULT__&#39;;              # Current val: &#39;9095&#39;
-database__dbdatadir=&#39;/opt/pacbio/smrtlink/userdata/db_datadir.default&#39;;
-
-# &#39;datadirs&#39; settings
-datadirs__jobsroot_dir=&#39;/opt/pacbio/smrtlink/userdata/jobs_root.default&#39;;
-datadirs__jobsroot_umask=&#39;__USE_DEFAULT__&#39;;   # Current val: &#39;0022&#39;
-datadirs__tmpdir_dir=&#39;/tmp&#39;;
-
-# &#39;computecfg_00&#39; settings
-computecfg_00__name=&#39;__USE_DEFAULT__&#39;;                # Current val: &#39;SMRT Analysis Compute Configuration&#39;
-computecfg_00__enable=&#39;__USE_DEFAULT__&#39;;              # Current val: &#39;true&#39;
-computecfg_00__menuorder=&#39;__USE_DEFAULT__&#39;;           # Current val: &#39;1&#39;
-computecfg_00__nproc=&#39;8&#39;;
-computecfg_00__maxchunks=&#39;__USE_DEFAULT__&#39;;           # Current val: &#39;24&#39;
-computecfg_00__jmstype=&#39;Slurm&#39;;
-computecfg_00__cromwell_loglevel=&#39;__USE_DEFAULT__&#39;;   # Current val: &#39;INFO&#39;
-computecfg_00__cromwell_concurrent_job_limit=&#39;__USE_DEFAULT__&#39;;  # Current val: &#39;500&#39;
-computecfg_00__slurm_bindir=&#39;/usr/bin&#39;;
-computecfg_00__slurm_partition=&#39;__USE_DEFAULT__&#39;;     # Current val: &#39;&#39;
-computecfg_00__slurm_startargs=&#39;__USE_DEFAULT__&#39;;     # Current val: &#39;&#39;
-computecfg_00__slurm_useraccting=&#39;__USE_DEFAULT__&#39;;   # Current val: &#39;false&#39;
-computecfg_00__slurm_memrequest=&#39;__USE_DEFAULT__&#39;;    # Current val: &#39;false&#39;
-computecfg_00__slurm_slurmconf=&#39;__USE_DEFAULT__&#39;;     # Current val: &#39;&#39;
-
-# &#39;computecfg_01&#39; settings
-computecfg_01__name=&#39;Local Analysis&#39;;
-computecfg_01__enable=&#39;__USE_DEFAULT__&#39;;              # Current val: &#39;true&#39;
-computecfg_01__menuorder=&#39;__USE_DEFAULT__&#39;;           # Current val: &#39;2&#39;
-computecfg_01__nproc=&#39;8&#39;;
-computecfg_01__maxchunks=&#39;__USE_DEFAULT__&#39;;           # Current val: &#39;24&#39;
-computecfg_01__jmstype=&#39;NONE&#39;;
-computecfg_01__cromwell_loglevel=&#39;__USE_DEFAULT__&#39;;   # Current val: &#39;INFO&#39;
-computecfg_01__cromwell_concurrent_job_limit=&#39;__USE_DEFAULT__&#39;;  # Current val: &#39;500&#39;
-
-# &#39;internal&#39; settings
-internal__version=&#39;smrtlink-release_25.3.0.273777&#39;;
-</code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This configuration file has two compute configurations (<code>computecfg_00</code> and <code>computecfg_01</code>) setup for SLURM distributed analysis and local (non-distributed) analysis.</p>
-</div>
-</details>
-<p><br></p>
-<h2 id="reconfiguring-smrt-link">Reconfiguring SMRT Link</h2>
-<p>Following installation – if you need to change a given setting – you can do so by stopping SMRT Link services and using the <code>smrt_reconfig</code> command. The <code>smrt_reconfig</code> command – similar to the installation script – provides interactive prompts for each configuartion settings. </p>
-<p><strong>Stop Services</strong>: <code>$SMRT_ROOT/admin/bin/services-stop</code></p>
-<p><strong>Reconfigure</strong>: <code>$SMRT_ROOT/admin/bin/smrt_reconfig</code></p>
-<p><strong>Start Services</strong>: <code>$SMRT_ROOT/admin/bin/services-start</code></p>
-<h3 id="changing-a-specific-setting">Changing a specific setting</h3>
-<p>If you know exactly what setting you want to change, you can also perform <code>smrt_reconfig</code> non-interactively. </p>
-<p>See all the options available: <code>$SMRT_ROOT/admin/bin/smrt_reconfig --help</code></p>
-<p><strong>Example</strong>: To change the temporary directory (<code>tmp_dir</code>) from the default <code>/tmp/smrtlink</code> to <code>/tmp</code>, you could run:</p>
-<div class="highlight"><pre><span></span><code>$SMRT_ROOT/admin/bin/smrt_reconfig --datadirs-tmpdir-dir /tmp --batch
-</code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The <code>--batch</code> option allows you to run the command without interactive prompts, applying the specified changes directly. </p>
-</div>
-<p><br></p>
-<h2 id="advanced-topics">Advanced Topics</h2>
-<p><strong>See <a href="../advanced-topics/">Advanced Topics</a> for additional configuartion options including the following:</strong></p>
+<hr />
+<h2 id="upgrade-steps">Upgrade steps</h2>
+<p>Follow these steps to upgrade SMRT Link to v25.3:</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Download and Unzip the Installer</strong>: <code>curl -O https://downloads.pacbcloud.com/public/software/installers/smrtlink-release_25.3.0.273777.zip</code> <br><br> <code>unzip smrtlink-release_25.3.0.273777.zip</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Log onto Install Host</strong>: Access the server as <code>$SMRT_USER</code>.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Stop SMRT Link Services</strong>: Use the command: <code>$SMRT_ROOT/admin/bin/services-stop</code> <br><br> Ensure that no active SMRT Link analysis jobs are running before stopping services.</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Run the Installer with Upgrade Option</strong>: Navigate to the directory containing the downloaded installer. Execute the installer with the upgrade option: <code>./smrtlink_&lt;version_number&gt;.run --rootdir $SMRT_ROOT --upgrade</code> <br><br> The <code>$SMRT_ROOT</code> directory must be an existing SMRT Link installation. Several validation steps will occur to ensure that a valid <code>$SMRT_ROOT</code> is being updated.</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Start SMRT Link Services</strong>: Use the command:  <code>$SMRT_ROOT/admin/bin/services-start</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Run Site Acceptance Test (Optional)</strong>:  <code>$SMRT_ROOT/admin/bin/run-sat-services</code>. <br><br> Successful completion indicates that the HPC configuration is functioning correctly.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="post-upgrade-steps">Post-upgrade steps</h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Clear Browser Cache (Recommended)</strong>: Open Google Chrome and navigate to <code>More Tools</code> &gt; <code>Clear browsing data</code>. Select <code>All Time</code> for the time range and check <code>Cached images and files</code>. Click <code>Clear data</code> and restart the browser.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Configure LDAP and SSO (Optional)</strong>: Set up LDAP and SSO integration and add users. See <a href="../advanced-topics/#user-management">Advanced Topics</a>.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Install SSL Certificate (Optional)</strong>:<br>Upon the first startup of SMRT Link, NGINX automagically generates a key and self signed certificate. To create a new certificate see <a href="../advanced-topics/#ssltls">Advanced Topics</a>.</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Change Default Passwords (Optional)</strong>:<br>Update admin and pbicsuser passwords. See <a href="../advanced-topics/#changing-default-passwords">Advanced Topics</a>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="smrt-tools-upgrade-steps">SMRT Tools upgrade steps</h2>
+<p>SMRT Tools are the command-line tools included with SMRT Link. These are developer tools for use by bioinformaticians working with secondary analysis results. </p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Upgrade SMRT Tools</strong>:<br><code>./smrtlink_&lt;version_number&gt;.run --rootdir $SMRT_ROOT --smrttools-only --upgrade</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Access Tools</strong>:<br><code>$SMRT_ROOT/smrtlink/smrtcmds/bin</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>If you encounter issues during the upgrade:</p>
 <ul>
-<li><a href="../advanced-topics/#enabling-the-keycloak-admin-interface">Enabling Keycloak</a> for user and role management</li>
-<li><a href="../advanced-topics/#changing-default-passwords">Changing Default Passwords</a></li>
-<li><a href="../advanced-topics/#user-management">LDAP and SSO Integration</a></li>
-<li><a href="../advanced-topics/#adding-local-users">Adding Local Users</a></li>
-<li><a href="../advanced-topics/#ssltls">Configuring SSL</a></li>
-<li><a href="../advanced-topics/#api-documentation">Using the API</a></li>
-<li><a href="../advanced-topics/#lims-integration">LIMS integration</a></li>
+<li>
+<p><strong>Logs</strong>: Review the installation logs located in <code>$SMRT_ROOT/install/logs</code> for error messages.</p>
+</li>
+<li>
+<p><strong>Support</strong>: Contact PacBio support at <a href="mailto:support@pacb.com">support@pacb.com</a> or call 1-877-920-PACB (7222) for assistance.</p>
+</li>
 </ul>
 
 
@@ -678,7 +709,7 @@ internal__version=&#39;smrtlink-release_25.3.0.273777&#39;;
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../upgrading-smrt-link/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Upgrading SMRT Link">
+          <a href="../installing-smrt-link/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installing SMRT Link">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -688,20 +719,20 @@ internal__version=&#39;smrtlink-release_25.3.0.273777&#39;;
                 Previous
               </span>
               <div class="md-ellipsis">
-                Upgrading SMRT Link
+                Installing SMRT Link
               </div>
             </div>
           </a>
         
         
           
-          <a href="../instrument-connection/" class="md-footer__link md-footer__link--next" aria-label="Next: Instrument Connection">
+          <a href="../configuration/" class="md-footer__link md-footer__link--next" aria-label="Next: Configuration">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Instrument Connection
+                Configuration
               </div>
             </div>
             <div class="md-footer__button md-icon">

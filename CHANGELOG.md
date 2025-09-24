@@ -12,6 +12,5 @@ All notable changes to this project will be documented in this file.
 - Release workflow for preparing and publishing installation guides.
 
 ### Known Issues
-
 - This is a **beta release**. Some installation paths may differ across environments.
 - Feedback is welcome to improve cross-platform support and clarify setup steps.

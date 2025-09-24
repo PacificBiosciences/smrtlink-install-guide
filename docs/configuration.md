@@ -141,6 +141,6 @@ $SMRT_ROOT/admin/bin/smrt_reconfig --datadirs-tmpdir-dir /tmp --batch
 - [Adding Local Users](advanced-topics.md#adding-local-users)
 - [Configuring SSL](advanced-topics.md#ssltls)
 - [Using the API](advanced-topics.md#api-documentation)
-- [LIMS integration](advanced-topics.md#integrating-smrt-link-with-laboratory-information-management-systems-lims)
+- [LIMS integration](advanced-topics.md#lims-integration)
 
 	

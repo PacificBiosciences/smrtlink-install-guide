@@ -1,0 +1,36 @@
+/* Change the top banner (header) color using a HEX color code */
+:root {
+    --custom-header-color: #e31b92; /* Magenta (change this to any hex color) */
+}
+
+.md-header {
+    background-color: var(--custom-header-color) !important;
+}
+
+/* Adjust text color for better contrast if needed */
+.md-header__inner {
+    color: white !important;
+}
+
+/* Force header height */
+.md-header {
+  height: 50px !important;
+  min-height: 50px !important;
+  line-height: 50px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  box-sizing: border-box;
+}
+
+/* Ensure elements inside the header are vertically centered */
+.md-header__inner {
+  height: 50px !important;
+  display: flex;
+  align-items: center;
+}
+
+/* Resize logo to fit within header height */
+.md-header__button.md-logo img {
+  height: 40px; /* Slightly less than 50px to fit neatly */
+  width: auto;
+}

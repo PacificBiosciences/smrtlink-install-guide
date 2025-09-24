@@ -34,7 +34,7 @@ If not done already, identify a location in the cloud or on your shared file sys
 | 4    | Choose the desired scheme: <ul><li> ssh (srs) </li><li> Amazon S3 </li><li> Google Cloud Storage </li><li> Microsoft Azure Blob Storage </li><li> S3-compatible storage </li></ul> |
 | 5    | Enter the required information for the selected transfer scheme. <ul><li> **Name**: User-specified text string that displays in the Data directory dialog to identify the transfer scheme. </li><li> **Description**: User-specified text string that describes the transfer scheme. </li><li> **Scheme-specific fields** (see below). </li></ul> | 
 | 6    | Click `Save`                                                                           |
-| 7    | Once the transfer scheme is associated with a connected instrument (see [Connect New Instrument](#connect-new-instrument)), return to this menu and click `Test Settings` to ensure that the scheme works. |
+| 7    | Once the transfer scheme is associated with a connected instrument (see [Connect a New Instrument](#connect-a-new-instrument)), return to this menu and click `Test Settings` to ensure that the scheme works. |
 
 !!! warning
     The rsync daemon file transfer scheme will be disabled through a future software update in favor of more secure alternatives. Once disabled, file transfers will fail. PacBio strongly recommends transitioning to a supported transfer option.
@@ -146,7 +146,7 @@ If not done already, identify a location in the cloud or on your shared file sys
 ??? abstract "Expand scheme details"
 
     !!!note
-        Follow [S3 Bucket configuration](#s3-bucket-configuration) requirements when setting up S3 compatible storage.
+        Follow [Amazon S3 Bucket configuration](#amazon-s3) requirements when setting up S3 compatible storage.
 
     - **Endpoint**: URL for object storage endpoint, for example https://storage.googleapi.com
     - **Bucket**: Bucket name with no prefix, for example /bucketname .
