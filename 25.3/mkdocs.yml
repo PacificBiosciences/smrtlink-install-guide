@@ -10,7 +10,6 @@ nav:
   - Instrument Connection: instrument-connection.md
   - Advanced Topics: advanced-topics.md
 
-
 # Enable macros to use variables
 plugins:
   - macros
@@ -20,7 +19,7 @@ plugins:
 # Theme settings
 theme:
   name: material
-  custom_dir: overrides  #Enables custom template overrides
+  custom_dir: overrides  # Enables custom template overrides
   favicon: assets/favicon.png
   logo: assets/logo.png
   features:

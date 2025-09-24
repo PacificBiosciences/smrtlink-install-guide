@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
       
       
 
@@ -129,13 +129,11 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -167,7 +165,6 @@
     </div>
   </div>
 </div>
-      
     
     
   </nav>
@@ -215,7 +212,6 @@
       <a href=".." class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Home
     
@@ -236,7 +232,6 @@
     <li class="md-nav__item">
       <a href="../quick-start-guide/" class="md-nav__link">
         
-  
   
   <span class="md-ellipsis">
     Quick Start Guide
@@ -268,7 +263,6 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
-  
   <span class="md-ellipsis">
     System Requirements
     
@@ -280,7 +274,6 @@
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
-  
   
   <span class="md-ellipsis">
     System Requirements
@@ -441,9 +434,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ldap-user-management-optional" class="md-nav__link">
+  <a href="#user-authentication-optional" class="md-nav__link">
     <span class="md-ellipsis">
-      LDAP User Management (Optional)
+      User Authentication (Optional)
     </span>
   </a>
   
@@ -476,7 +469,6 @@
       <a href="../installing-smrt-link/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Installing SMRT Link
     
@@ -497,7 +489,6 @@
     <li class="md-nav__item">
       <a href="../upgrading-smrt-link/" class="md-nav__link">
         
-  
   
   <span class="md-ellipsis">
     Upgrading SMRT Link
@@ -520,7 +511,6 @@
       <a href="../configuration/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Configuration
     
@@ -542,7 +532,6 @@
       <a href="../instrument-connection/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Instrument Connection
     
@@ -563,7 +552,6 @@
     <li class="md-nav__item">
       <a href="../advanced-topics/" class="md-nav__link">
         
-  
   
   <span class="md-ellipsis">
     Advanced Topics
@@ -738,9 +726,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ldap-user-management-optional" class="md-nav__link">
+  <a href="#user-authentication-optional" class="md-nav__link">
     <span class="md-ellipsis">
-      LDAP User Management (Optional)
+      User Authentication (Optional)
     </span>
   </a>
   
@@ -783,7 +771,7 @@
 <tbody>
 <tr>
 <td><strong>Revio® system</strong></td>
-<td>Instrument software v13.3, all chemivstries</td>
+<td>Instrument software v13.3, all chemistries</td>
 </tr>
 <tr>
 <td><strong>Vega™ system</strong></td>
@@ -803,7 +791,7 @@
 <tbody>
 <tr>
 <td>Rocky Linux</td>
-<td>8 &amp; 9</td>
+<td>9 &amp; 10</td>
 </tr>
 <tr>
 <td>Ubuntu</td>
@@ -825,7 +813,7 @@
 <li>SMRT Link (single-node)</li>
 <li>SMRT Link Lite</li>
 </ol>
-<p>Which configuration option to choose depends on your available resources and need for SMRT Analysis (push-button secondary analysis). </p>
+<p>Which configuration option to choose depends on your available compute resources and if you need SMRT Analysis (push-button secondary analysis). </p>
 <table>
 <thead>
 <tr>
@@ -961,7 +949,6 @@
 <li><code>docker://google/deepvariant:1.6.1-gpu</code></li>
 <li><code>docker://quay.io/biocontainers/whatshap:1.4--py39hc16433a_1</code></li>
 <li><code>docker://ghcr.io/dnanexus-rnd/glnexus:v1.4.1</code></li>
-<li><code>docker://broadinstitute/picard:2.27.5</code></li>
 </ul>
 </li>
 </ul>
@@ -993,6 +980,7 @@
 <ul>
 <li>The base directory <code>/opt/pacbio/</code> should be created prior to installation and owned by <code>$SMRT_USER</code> with read/write/execute permissions.</li>
 <li>The <code>smrtlink/</code> directory should not exist prior to installation as it <strong>will be created during installation</strong></li>
+<li><code>db_datadir</code>, <code>jobs_root</code>, and <code>tmp_dir</code> can be modified during installation or using <code>$SMRT_ROOT/admin/bin/smrt_reconfig</code> scripts. </li>
 </ul>
 </div>
 <div class="admonition warning">
@@ -1041,10 +1029,6 @@
 </tr>
 </tbody>
 </table>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><code>db_datadir</code>, <code>jobs_root</code>, and <code>tmp_dir</code> can be modified during installation or <code>$SMRT_ROOT/admin/bin/smrt_reconfig</code> scripts. </p>
-</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>Storage Considerations</strong>: Job storage requirements depend on utilization and analyses performed. <code>jobs_root</code> is unrelated to storage requirements related to instrument data transfer.</p>
@@ -1193,19 +1177,12 @@
 <p><strong>Full Network Diagram</strong>
 <img alt="" src="../img/network-diagram.png" /></p>
 <hr />
-<h2 id="ldap-user-management-optional">LDAP User Management (Optional)</h2>
-<p>SMRT Link supports integration with LDAP for user login authentication, as well as using local Keycloak users
-that exist only within SMRT Link.</p>
-<p>If you are interested in configuring SMRT Link integration with your organization’s LDAP, PacBio recommends
-that you consult your LDAP administrator to help determine the correct LDAP settings.</p>
-<p>See <a href="../advanced-topics/">Advanced Topics</a> for more information on configuring LDAP in Keycloak.</p>
+<h2 id="user-authentication-optional">User Authentication (Optional)</h2>
+<p>SMRT Link supports integration with LDAP for user login authentication, as well as using local Keycloak users that exist only within SMRT Link. SMRT Link can also leverage Single Sign-On (SSO) when configured through Keycloak, allowing users to authenticate once and access multiple systems seamlessly.</p>
+<p>If you are interested in configuring SMRT Link integration with your organization’s LDAP or SSO setup, PacBio recommends consulting your LDAP or identity administrator to determine the correct settings.</p>
+<p>See <a href="../advanced-topics/">Advanced Topics</a> for more information on configuring LDAP and SSO in Keycloak.</p>
 <h2 id="ssltls-certificate-optional">SSL/TLS Certificate (Optional)</h2>
-<p>SMRT Link v25.2 uses SSL (Secure Sockets Layer) to enable access via HTTPS (HTTP over SSL), so that your
-SMRT Link logins and data are encrypted during transport to and from SMRT Link. SMRT Link includes an
-authentication server (Keycloak), which can be configured to integrate with your LDAP/AD servers and enable
-user authentication using your organizations’ user name and password. To ensure a secure connection
-between the SMRT Link server and your browser, a domain-specific SSL certificate may be installed after
-completing SMRT Link installation.</p>
+<p>SMRT Link uses SSL/TLS to encrypt logins and data transmitted via HTTPS. SMRT Link includes an authentication server (Keycloak), which can integrate with LDAP/AD or Single Sign-On (SSO) to enable secure user authentication with your organization’s credentials. To ensure a secure connection between the SMRT Link server and your browser, a domain-specific SSL certificate can be installed after SMRT Link installation.</p>
 <p>See <a href="../advanced-topics/">Advanced Topics</a> for more information on installing an SSL certificate for SMRT Link.</p>
 
 
@@ -1300,12 +1277,10 @@ completing SMRT Link installation.</p>
     </div>
     
     
-    
-      
-      <script id="__config" type="application/json">{"base": "..", "features": ["version-dropdown", "navigation.footer"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["version-dropdown", "navigation.footer"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../assets/javascripts/bundle.f1b6f286.min.js"></script>
       
     
   </body>
