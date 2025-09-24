@@ -62,25 +62,21 @@ The Keycloak Admin graphical interface is disabled by default for security reaso
             $SMRT_ROOT/admin/bin/restart-gui --disable-keycloak-console
             ```
     2. **Access the Keycloak Admin Interface**: Open a web browser and navigate to
-    ```
-    https://<SMRT_Link_Server_Hostname>:9443/admin
-    ```
+        ```
+        https://<SMRT_Link_Server_Hostname>:9443/admin
+        ```
 
     3. **Log In**:
-    
-    Use the administrator credentials (default: `admin/admin`) to log in.
+        Use the administrator credentials (default: `admin/admin`) to log in.
 
     4. **Perform Administrative Tasks**:
-    
-    Manage users, roles, and authentication settings as required.
+        Manage users, roles, and authentication settings as required.
 
     5. **Disable the Keycloak Admin Interface**:
-    
-    For security purposes, disable the interface when not in use by restarting SMRT Link services without the `--enable-keycloak-console` flag:
-
-    ```bash
-    $SMRT_ROOT/admin/bin/services-start
-    ```
+        For security purposes, disable the interface when not in use by restarting SMRT Link services without the `--enable-keycloak-console` flag:
+        ```bash
+        $SMRT_ROOT/admin/bin/services-start
+        ```
 
     !!!note
         Ensure that access to port 9443 is restricted to authorized personnel only.

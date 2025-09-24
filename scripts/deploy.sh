@@ -22,5 +22,11 @@ mv site ${VER}
 ln -sf ${VER} ./latest
 mike set-default --branch "$GIT_BRANCH" latest
 
+# Clean up broken symlinks
+if [ -L "25.3/25.3" ]; then
+  echo "Removing bad symlink 25.3/25.3"
+  rm "25.3/25.3"
+fi
+
 # Return to scripts dir
 cd scripts

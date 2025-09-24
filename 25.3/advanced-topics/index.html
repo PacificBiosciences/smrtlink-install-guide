@@ -819,24 +819,24 @@
 </li>
 <li>
 <p><strong>Access the Keycloak Admin Interface</strong>: Open a web browser and navigate to
-<div class="highlight"><pre><span></span><code>https://&lt;SMRT_Link_Server_Hostname&gt;:9443/admin
+    <div class="highlight"><pre><span></span><code>https://&lt;SMRT_Link_Server_Hostname&gt;:9443/admin
 </code></pre></div></p>
 </li>
 <li>
-<p><strong>Log In</strong>:</p>
+<p><strong>Log In</strong>:
+    Use the administrator credentials (default: <code>admin/admin</code>) to log in.</p>
+</li>
+<li>
+<p><strong>Perform Administrative Tasks</strong>:
+    Manage users, roles, and authentication settings as required.</p>
+</li>
+<li>
+<p><strong>Disable the Keycloak Admin Interface</strong>:
+    For security purposes, disable the interface when not in use by restarting SMRT Link services without the <code>--enable-keycloak-console</code> flag:
+    <div class="highlight"><pre><span></span><code><span class="nv">$SMRT_ROOT</span>/admin/bin/services-start
+</code></pre></div></p>
 </li>
 </ol>
-<p>Use the administrator credentials (default: <code>admin/admin</code>) to log in.</p>
-<ol>
-<li><strong>Perform Administrative Tasks</strong>:</li>
-</ol>
-<p>Manage users, roles, and authentication settings as required.</p>
-<ol>
-<li><strong>Disable the Keycloak Admin Interface</strong>:</li>
-</ol>
-<p>For security purposes, disable the interface when not in use by restarting SMRT Link services without the <code>--enable-keycloak-console</code> flag:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$SMRT_ROOT</span>/admin/bin/services-start
-</code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Ensure that access to port 9443 is restricted to authorized personnel only.</p>
