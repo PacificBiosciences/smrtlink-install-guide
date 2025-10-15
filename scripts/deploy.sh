@@ -28,5 +28,8 @@ if [ -L "25.3/25.3" ]; then
   rm "25.3/25.3"
 fi
 
+# Copy Google Search Console HTML file
+cp scripts/google87f71699e7228394.html latest/
+
 # Return to scripts dir
 cd scripts

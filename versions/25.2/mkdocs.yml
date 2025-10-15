@@ -42,6 +42,9 @@ extra:
   version:
     provider: mike
     alias: true
+  analytics:
+    provider: google
+    property: G-ND77Z17GHP
 
 ## Coloring
 extra_css:

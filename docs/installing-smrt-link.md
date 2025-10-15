@@ -49,8 +49,8 @@ This guide provides comprehensive instructions for installing SMRT Link v{{ smrt
 
 ## SMRT Tools installation steps
 
-SMRT Tools are the command-line tools included with SMRT Link. These are developer tools for use by bioinformaticians working with secondary analysis results. Aailable tools will be installed at `$SMRT_ROOT/smrtcmds/bin/`. For tool details please utilize the help
-function, `{tool} –-help`,or reference [PacBio GitHub](https://github.com/PacificBiosciences) for select tools. 
+SMRT Tools are the command-line tools included with SMRT Link. These are developer tools for use by bioinformaticians working with secondary analysis results. Available tools will be installed at `$SMRT_ROOT/smrtcmds/bin/`. For tool details please utilize the help
+function, `{tool} –-help`, or reference [PacBio GitHub](https://github.com/PacificBiosciences) for select tools. 
 
 | Step | Action                                                                 |
 |------|------------------------------------------------------------------------|
